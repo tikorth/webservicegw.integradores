@@ -9,3 +9,6 @@ https://github.com/tikorth/webservicegw.integradores/blob/main/WebService%20Guar
 
 Exemplos de autenticação em vias de obter o token JWT nas linguagens C#, Java, JavaScript, PHP, Phyton e HTML5
 https://github.com/tikorth/webservicegw.integradores/blob/main/WebService%20GuardianWeb%20-%20Exemplos%20autenticacao.pdf
+
+Exemplo de um objeto JSON que representa um conjunto de abastecimentos/transferências
+https://github.com/tikorth/webservicegw.integradores/blob/main/abastecimentos.json
