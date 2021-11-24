@@ -12,3 +12,6 @@ https://github.com/tikorth/webservicegw.integradores/blob/main/WebService%20Guar
 
 Exemplo de um objeto JSON que representa um conjunto de abastecimentos/transferências
 https://github.com/tikorth/webservicegw.integradores/blob/main/abastecimentos.json
+
+by Korth RFID
+https://www.korth.com.br/
