@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "de30f1a7-31b3-4738-a611-dee20fe84a97",
+		"name": "Guardian Web Apresentação da API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3549609"
+	},
+	"item": [
+		{
+			"name": "Passo  1 Pegar token",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true,
+					"content-type": true,
+					"user-agent": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"login\" : \"seulogin@suaempresa\",\"senha\" : \"teste123suasenha\"}"
+				},
+				"url": {
+					"raw": "https://www.guardianweb.com.br/webservicev1gw/v1/autenticar",
+					"protocol": "https",
+					"host": [
+						"www",
+						"guardianweb",
+						"com",
+						"br"
+					],
+					"path": [
+						"webservicev1gw",
+						"v1",
+						"autenticar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Passo 2 Abastecimentos",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true,
+					"connection": true,
+					"accept-encoding": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJrb3J0aC5jb20uYnIiLCJleHAiOjE2ODI1NDY4NzcsImp0aSI6Ii1pRFFqV0ktZXVhM0pCdFJqUnpJWGciLCJpYXQiOjE2ODI1NDMyNzcsIm5iZiI6MTY4MjU0MzE1Nywic3ViIjoiaW50ZWdyYWNhbyIsImF1ZCI6ImFwcHNfa29ydGgiLCJpbnEiOjIsImxvZ2luIjoiY2FybG9za29ydGhAdXNpbmFsdWl6YSIsIndzY3JlYXRlIjp0cnVlLCJ3c3JlYWQiOnRydWUsIndzdXBkYXRlIjp0cnVlLCJ3c2RlbGV0ZSI6ZmFsc2V9.YiF2eN3esDWwwFeY7v-nQZ77xPAlcA8115hCx3sKIKc"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://www.guardianweb.com.br/webservicev1gw/v2/listar/abastecimentos?dataIni=2023-04-24&dataFim=2023-04-26&referencia=data_abast",
+					"protocol": "https",
+					"host": [
+						"www",
+						"guardianweb",
+						"com",
+						"br"
+					],
+					"path": [
+						"webservicev1gw",
+						"v2",
+						"listar",
+						"abastecimentos"
+					],
+					"query": [
+						{
+							"key": "dataIni",
+							"value": "2023-04-24"
+						},
+						{
+							"key": "dataFim",
+							"value": "2023-04-26"
+						},
+						{
+							"key": "referencia",
+							"value": "data_abast"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
